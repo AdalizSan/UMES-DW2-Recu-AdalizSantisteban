@@ -3,7 +3,7 @@ import { responseSuccess, responseError } from '../helpers/response.helper.js';
 import { getDb } from '../configs/mongodb.config.js';
 import Joi from 'joi';
 
-const computadorasSchema = Joi.object({
+const computadoraSchema = Joi.object({
     nombreAlumno: Joi.string().required().messages({
     'string.base': 'El nombre del alumno debe ser una cadena de texto',
     'string.empty': 'El nombre del alumno no puede estar vacío',
